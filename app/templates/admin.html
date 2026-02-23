@@ -34,6 +34,21 @@
 
       </div>
     </div>
+
+          <div class="row">
+             <label>
+              <input class="with-gap blue" name="done" type="radio" value="true" onchange="this.form.submit()" {{ "checked" if done=="true" }} />
+              <span>Done</span>
+            </label>
+            <label>
+              <input class="with-gap blue" name="done" type="radio" value="false" onchange="this.form.submit()" {{ "checked" if done=="false" }} />
+              <span>Not Done</span>
+            </label>
+            <label>
+              <input class="with-gap blue" name="done" type="radio" value="any" onchange="this.form.submit()" {{ "checked" if done=="any" }} />
+              <span>Any</span>
+            </label>
+          </div>
   </form>
 
   <table>
